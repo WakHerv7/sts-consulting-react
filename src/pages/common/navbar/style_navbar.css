@@ -1,0 +1,203 @@
+.navbar_logo {
+    height: 40px;
+    width: 40px;
+    pointer-events: none;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    background: #454d54;
+    /* border-bottom: 5px solid #339aa7; */
+    z-index: 100;
+}
+.navbar_bottom_border {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background: #339aa7;
+}
+.navbar_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between
+}
+
+.navbar_center ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_center ul li {
+    padding: 10px 13px 10px 13px;
+    /* margin-left: 0px; */
+    margin-right: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.navbar_center ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.activeNav {
+    background: #339aa7;
+}
+
+/* *************************** */
+.navbar_right{
+    /* background: chartreuse; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_right .loginBtn{
+    text-decoration: none;
+    color: #454d54;
+    background: #fff;
+    border-radius: 35px;
+    padding: 3px 10px 3px 10px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.navbar_right .userBtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #454d54;
+    /* background: coral; */
+    color: #fff;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* padding: 3px 10px 3px 10px; */
+    font-size: 24px;
+}
+.navbar_right .userBtn span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************************* */
+/* ********************************************* */
+.navbar_bottom_container {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background: chocolate; */
+    background-image: linear-gradient(180deg, #ebebeb 0%, rgba(255,255,255,0) 100%);
+}
+.navbar_bottom_container form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ============================ SELECT =========================== */
+/* ============================ SELECT =========================== */
+.custom_select {
+    position: relative;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-right: 25px;
+  }
+  .custom_select select {
+    display: block !important;
+    height: unset !important;
+    padding: 4px 8px;
+    font-size: 12px;
+    /* -webkit-appearance: none; */
+    /* padding: 7px 40px 7px 12px; */
+    width: 100px;
+    border: 1px solid #e8eaed;
+    border-radius: 35px;
+    background: #fff;
+    box-shadow: 1px 1px 4px -2px #000;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+  }
+.custom_select_1 select{
+    width: 170px;
+}
+.custom_select_2 select,
+.custom_select_3 select {
+    width: 270px;
+}
+
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
+  .custom_select:after {
+    content: '\f078';
+    font-family: Fontawesome;
+    font-size: 13px;
+    font-weight: 100;
+    /* font: normal normal normal 14px/1 FontAwesome; */
+    /* color: #0ebeff; */
+    right: 11px;
+    top: 5px;
+    height: 18px;
+    padding: 5px 0px 0px 8px;
+    /* background: coral; */
+    /* border-left: 1px solid #0ebeff; */
+    border-left: 1px solid #454d54;
+    position: absolute;
+    pointer-events: none;
+}
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+.custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+}
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
+  .custom_select select:required:invalid {
+    color: #5a667f;
+  }
+  .custom_select select option:nth-child(1) {
+    color: #ebebeb;
+  }
+  .custom_select select option[value=""][disabled] {
+    display: none;
+  }
+  .custom_select select:focus {
+    outline: none;
+    border-color: #339aa7;
+    /* box-shadow: 0 0 0 2px rgba(0,119,255,0.2); */
+  }
+/* ==================================================================== */
+/* ==================================================================== */
+
+.navbar_bottom_container form .submitBtn {
+    background: #83d468;
+    border-radius: 35px;
+    color: #fff;
+    border: none !important;
+    padding: 8px 27px;
+    box-shadow: 1px 1px 4px -2px #000;
+}

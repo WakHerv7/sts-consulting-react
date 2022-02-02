@@ -1,0 +1,172 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    /* min-height: 30rem; */
+    background: #454d54;
+}
+.footer .footer_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer img.skywalker_logo {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  width: 20rem;
+  /* height: 3rem; */
+}
+
+.grid-container-three {
+  position: relative;
+  display: grid;
+  width: 90%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  /* padding: 10px; */
+  grid-gap: 3rem;
+
+}
+.grid-container-three > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 1rem;
+  /* font-weight: 700; */
+  line-height: 1.5rem;
+  color: #fff;
+  /* background: coral; */
+  /* margin: 1rem; */
+}
+
+.grid-container-three .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0.8rem; */
+  text-align: left;
+  justify-content: left;
+  padding-left: 3rem;
+}
+
+
+.grid-container-three .item .footer_item_title{
+  color: #83d468;
+  /* text-transform: uppercase; */
+  width: 100%;
+  font-size: 18px;
+  /* width: 20vw; */
+  position: relative;
+  margin-bottom: 20px;
+}
+.grid-container-three .item .footer_item_title::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 33px;
+  border-bottom: 1px solid #83d468;
+}
+.grid-container-three .item .footer_item_title small{
+  font-size: 12px;
+}
+.footer_description {
+  font-size: 14px;
+}
+.grid-container-three .item:nth-child(2),
+.grid-container-three .item:nth-child(3) {
+  padding-left: 5rem;
+}
+.grid-container-three .item ul {
+  width: 100%;
+  list-style: none;
+  font-size: 14px;
+  margin-top: 0 !important;
+}
+.grid-container-three .item li a{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.grid-container-three .item li{
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.grid-container-three .item li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 102%;
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-left:10px solid #83d468; 
+}
+
+.footer_contact_item {
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.footer_contact_icon {
+  display: flex;
+  align-items: center;
+  color:#83d468;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.footer_copyright {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #575d63;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.footer_copyright a {
+  color: #339aa7;
+  text-decoration: none;
+}
+
+  
+  @media only screen and (max-width: 768px) {
+    
+    .grid-container-three .item .list_title{
+        color: var(--primary);
+        text-transform: uppercase;
+        width: 18vw;
+      }
+      .grid-container-three .item ul {
+        width: 18vw;
+      }
+}
+
+@media only screen and (max-width: 560px) {
+  .grid-container-three {
+    grid-template-columns: 1fr;
+  }
+  .footer img.skywalker_logo {
+    width: 12rem;
+  }
+}

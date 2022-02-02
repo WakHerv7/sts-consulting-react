@@ -1,0 +1,14 @@
+.homeBackgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    background-attachment: fixed !important;
+    background-position-x: center !important;
+    background-position-y: 30% !important;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .mainBody {
+    overflow-x: hidden;
+  }

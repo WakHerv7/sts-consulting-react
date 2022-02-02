@@ -1,0 +1,284 @@
+
+  
+  .Slider_formateur {
+    width: 60rem;
+    /* height: unset !important; */
+    height: 300px;
+    /* overflow: auto; */
+    white-space: normal ;
+  }
+  
+  .ItemComponent {
+    display: inline-block;
+    width: 50rem;
+    height: 200px;
+  }
+
+  /* .bg_picture_card-slide_formateur_invest {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  } */
+
+  /* ********************************************* */
+  /* **************************************************** */
+
+  @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.carousel-container-Formateur {
+  margin-top: 10rem;
+  /* max-width: 1280px; */
+  /* width: 100%; */
+
+  margin: 50px auto;
+  margin-top: 0;
+  min-height: 100px;
+  position: relative;
+  /* background: crimson; */
+}
+
+.carousel-container-Formateur .carousel-inner {
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-container-Formateur .track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+.carousel-container-Formateur .card-container-slide_formateur {
+  /* width: 259px; */
+  width: 20rem;  
+  flex-shrink: 0;
+  height: unset !important;
+  min-height: 300px;
+  margin-bottom: 1rem;
+  /* padding-right: 15px; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* background: lightgreen; */
+}
+.fit-content-slider{
+  width: fit-content !important;
+}
+.carousel-container-Formateur .card-container-slide_formateur .card-slide_formateur {
+  /* width: 100%; */
+  width: 90%;
+  
+  height: 100%;
+  /* border: 1px solid #ccc; */
+  box-shadow: 3px 3px 3px rgb(0 0 0 / 0.3);
+  /* border-right: 5px solid var(--primaryAdaaColor); */
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+
+  /* display: block; */
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* margin: 1rem; */
+  /* margin-left: 0.5rem; */
+  /* margin-right: 1rem; */
+  /* padding: 0.5rem; */
+  word-wrap: break-word !important;
+  /* background: lightcoral; */
+  
+}
+.carousel-container-Formateur .card-container-slide_formateur .card-slide_formateur .img{
+    /* width: 5rem; */
+}
+.nav-Formateur button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* box-shadow: 1px 1px 3px rgb(0 0 0 / 0.3); */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background: #EBEBEB !important;
+  color: var(--primaryAdaaColor);
+}
+.nav-Formateur button i{
+  font-size: 3rem;
+}
+
+.nav-Formateur .prev {
+  left: -60px;
+  display: none;
+}
+.nav-Formateur .prev.show {
+  display: flex;
+}
+.nav-Formateur .next {
+  right: -60px;
+  justify-content: 10%;
+  /* padding-left: 10px; */
+}
+.nav-Formateur .next i {
+    /* margin-left: 14px; */
+}
+.nav-Formateur .next.hide {
+  display: none;
+}
+
+/* .card-slide_formateur > * {
+  flex: 1;
+} */
+.card-slide_formateur .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.card-slide_formateur .info {
+  flex-basis: 40px;
+  background: #333;
+  color: #fff;
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* **************************************** */
+/* .card-slide_formateur {
+  display: block;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 5rem;
+
+} */
+.card-slide_formateur .box-top-slide_formateur {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 230px;
+  /* max-height: 5rem; */
+  box-shadow: unset;
+  /* background: blue; */
+  }
+  .card-slide_formateur .box-top-slide_formateur div.perso_formateur {      
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      /* border-radius: 15px; */
+      background: var(--primaryAdaaColor);
+      border: 3px solid var(--primaryAdaaColor);
+  }
+
+
+.card-slide_formateur .box-bottom-slide_formateur {
+  position: relative ;
+  display: flex ;
+  flex-direction: column ;
+  align-items: baseline;
+  justify-content: center ;
+  text-align: left ;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 15px;
+  height: fit-content;
+  /* background: lightseagreen; */
+  /* z-index: 1; */
+}
+
+.card-slide_formateur .box-bottom-slide_formateur .box-bottom-title-slide_formateur {
+  /* color: var(--primaryAdaaColor); */
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  width: 100%;
+  display: flex ;
+  /* justify-content: center ; */
+}
+.card-slide_formateur .box-bottom-slide_formateur .box-bottom-content-slide_formateur {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  display: flex ;
+  /* justify-content: center ; */
+}
+.card-slide_formateur .box-bottom-slide_formateur .box-bottom-infos-slide_formateur {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  width: 100%;
+  display: flex ;
+  /* justify-content: center ; */
+}
+.box-bottom-infos-slide_formateur .box_bottom_infos_slide_item {
+margin-right: 15px;
+display: flex ;
+align-items: center;
+}
+.box-bottom-infos-slide_formateur .box_bottom_infos_slide_item span {
+  margin-left: 5px;
+}
+/* ************************************** */
+
+.box-bottom-absolute-slide_formateur{
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+/* //////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1050px) {
+    .carousel-container-Formateur {
+      width: 50rem;
+    }
+    .carousel-container-Formateur .card-container-slide_formateur {
+      width: 12.5rem !important;
+  }
+}
+@media screen and (max-width: 920px) {
+    .carousel-container-Formateur {
+      width: 40rem;
+    }
+    .carousel-container-Formateur .card-container-slide_formateur {
+        width: 13.4rem !important;
+    }
+}
+@media screen and (max-width: 770px) {
+  .carousel-container-Formateur {
+    width: 30rem;
+  }
+  .carousel-container-Formateur .card-container-slide_formateur {
+      width: 15rem !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .carousel-container-Formateur {
+    width: 15rem;
+  }
+  .carousel-container-Formateur .card-container-slide_formateur {
+    width: 15rem;
+      
+  }
+}
