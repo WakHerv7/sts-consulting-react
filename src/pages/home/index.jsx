@@ -5,9 +5,8 @@ import Section3 from "./section3/Section3";
 import Section4 from "./section4/Section4";
 import Section5 from "./section5/Section5";
 import Footer from "../common/footer/Footer";
-// GoUpBtn
+
 import GoUpBtn from "../common/goUpBtn/GoUpBtn";
-// SocialLinks
 import SocialLinks from "../common/socialLinks/SocialLinks";
 
 // import bgImg from '../../assets/img/Image1.png';
