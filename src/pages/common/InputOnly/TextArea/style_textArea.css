@@ -1,0 +1,22 @@
+
+
+
+textarea.commonTextArea {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.commonTextAreaLabel {
+    color: white;
+    line-height: 2rem;
+}
+textarea.grayColor {
+    background: #ccc;
+}

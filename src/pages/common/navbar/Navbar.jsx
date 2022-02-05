@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import logo from '../../../logo.svg';
 import userIcon from '../../../assets/img/user_white.svg';
 import "./style_navbar.css";
@@ -5,7 +6,7 @@ import {
     AiOutlineUser
   } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = ({isHomePage=true}) => {
 
     const range = (size, startAt = 0,  step = 0) => {
         let n =startAt;
@@ -22,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className="navbar_center">
             <ul>
-                <li className="activeNav"><a href="#">ACCUEIL</a></li>
+                <li className={` ${isHomePage?'activeNav':''} `}><a href="#">ACCUEIL</a></li>
                 <li><a href="#">ENTREPRISES</a></li>
                 <li><a href="#">EMPLOI</a></li>
                 <li><a href="#">QUI SOMMES NOUS</a></li>
@@ -30,12 +31,12 @@ const Navbar = () => {
             </ul>
             </div>
             <div className="navbar_right">
-            <a className="loginBtn" href="#">S'inscrire</a>
+            <Link className="loginBtn" to="/register">S'inscrire</Link>
             <a className="userBtn" href="#"><span><img src={userIcon} width="30px" alt=""/></span></a>
             </div>
         </div>
-        <div className="navbar_bottom_container">
-            <form action="" method="get">
+        <div className={`navbar_bottom_container ${isHomePage?'':'navbar_bottom_container_register'}`}>
+            <form action="" method="get" className={` ${isHomePage?'':'displayNone'}`}>
                 <label for="slct1" className={`custom_select custom_select_1`} >
                     <select id="slct1">                
                         <option value="" disabled selected defaultValue>Entreprise</option>

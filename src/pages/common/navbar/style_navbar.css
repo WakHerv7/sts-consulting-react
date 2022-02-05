@@ -53,6 +53,9 @@
 .activeNav {
     background: #339aa7;
 }
+.displayNone {
+    display: none !important;
+}
 
 /* *************************** */
 .navbar_right{
@@ -200,4 +203,12 @@ display: none;
     border: none !important;
     padding: 8px 27px;
     box-shadow: 1px 1px 4px -2px #000;
+}
+
+
+
+
+
+.navbar_bottom_container_register {
+    background-image: linear-gradient(180deg, #339aa7 0%, #339aa700 80%) !important;
 }

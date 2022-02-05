@@ -1,0 +1,21 @@
+.homeBackgroundImg_Register {
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    background-attachment: fixed !important;
+    background-position-x: center !important;
+    background-position-y: 30% !important;
+    background-size: 100% auto !important;
+    z-index: -1;
+  }
+.homeBackgroundImg_Register::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #339aa788 0%, #339aa700 70%);
+  background-attachment: fixed !important;
+}
+  .mainBody {
+    overflow-x: hidden;
+  }
